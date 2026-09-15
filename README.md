@@ -1,5 +1,5 @@
 # cse210-student-template
-Tyler Mangelson trying something new
+I'm Tyler Mangelson! Trying something new
 
 This is the starter code for students in CSE 210.
 
