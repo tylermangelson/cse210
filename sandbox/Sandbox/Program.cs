@@ -16,7 +16,7 @@ class Program
         }
         else
         {
-            Console.WriteLine("Z is not much fun.")
+            Console.WriteLine("Z is not much fun.");
         }
     }
 }
