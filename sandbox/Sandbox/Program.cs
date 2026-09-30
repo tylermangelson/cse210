@@ -1,22 +1,58 @@
+// using System.Reflection.Metadata;
+
+// class Program
+// {
+
+//     static double AddNumbers(double x, int y)
+//     {
+//         return x + y;
+//     }
+
+//     static void DisplayGreeting(string name)
+//     {
+//         Console.WriteLine($"Welcome {name}, pleased to meet you.");
+//     }
+
+//     static void Main(string[] args)
+//     {
+
+//         DisplayGreeting("Bob");
+//         double answer = AddNumbers(12.234, 10);
+//         Console.WriteLine(answer);
+
+//     }
+
+// }
+
+
+
+using System;
+
 class Program
 {
     static void Main(string[] args)
     {
-        
-        int x = 10;
+       
+        Console.Write("What is your height: ");
 
-        if (x == 10)
+        int num = int.Parse(Console.ReadLine());
+
+        if (num < 48)
         {
-            Console.WriteLine("x is 10");
-            Console.WriteLine("Y is fun");
+        Console.WriteLine("Sorry, you are too short to ride.");
         }
-        else if (x == 20)
+
+        else if (num > 78)
         {
-            Console.WriteLine("This is the else if.`");
+            Console.WriteLine("Sorry, you are too tall to ride.");
         }
+
         else
         {
-            Console.WriteLine("Z is not much fun.");
+            Console.WriteLine("Enjoy the ride!");
         }
+  
     }
 }
+
+
