@@ -1,58 +1,28 @@
-// using System.Reflection.Metadata;
-
-// class Program
-// {
-
-//     static double AddNumbers(double x, int y)
-//     {
-//         return x + y;
-//     }
-
-//     static void DisplayGreeting(string name)
-//     {
-//         Console.WriteLine($"Welcome {name}, pleased to meet you.");
-//     }
-
-//     static void Main(string[] args)
-//     {
-
-//         DisplayGreeting("Bob");
-//         double answer = AddNumbers(12.234, 10);
-//         Console.WriteLine(answer);
-
-//     }
-
-// }
-
-
-
 using System;
+using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
 
 class Program
 {
-    static void Main(string[] args)
+    static int subtract(int a, int b)
     {
-       
-        Console.Write("What is your height: ");
-
-        int num = int.Parse(Console.ReadLine());
-
-        if (num < 48)
-        {
-        Console.WriteLine("Sorry, you are too short to ride.");
-        }
-
-        else if (num > 78)
-        {
-            Console.WriteLine("Sorry, you are too tall to ride.");
-        }
-
-        else
-        {
-            Console.WriteLine("Enjoy the ride!");
-        }
-  
+        return a - b;
     }
+
+    static void Main()
+    {
+        int diff = subtract(2, 3);
+        Console.WriteLine(diff);
+
+        string[] names = {"Ann", "Ben", "Tyler"};
+
+        foreach (string name in names)
+        {
+            Console.WriteLine(name);
+
+        }
+
+        for (int i = 0; i < names.Length; i++)
+    }
+
 }
-
-
