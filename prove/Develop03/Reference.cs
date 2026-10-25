@@ -5,24 +5,26 @@ class Reference
    private int _startVerse;
    private int _endVerse;
 
+   
    public Reference(string book, int chapter, int startVerse, int endVerse)
-    {
-       _book = book;
-       _chapter = chapter;
-       _startVerse = startVerse;
-       _endVerse = endVerse; 
-    }
+   {
+      _book = book;
+      _chapter = chapter;
+      _startVerse = startVerse;
+      _endVerse = endVerse;
+   }
 
-    public Reference(string book, int chapter, int startVerse)
-    {
-       _book = book;
-       _chapter = chapter;
-       _startVerse = startVerse;
-    }
-    
-    public void DisplayReference()
-    {
-        Console.WriteLine(" ");
-    }
-    
+   public Reference(string book, int chapter, int startVerse)
+   {
+      _book = book;
+      _chapter = chapter;
+      _startVerse = startVerse;
+      _endVerse = startVerse;
+   }
+
+   public void DisplayReference()
+   {
+      Console.WriteLine($"{_book} {_chapter}:{_startVerse}-{_endVerse}");
+   }
+
 }

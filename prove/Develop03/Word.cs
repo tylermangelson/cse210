@@ -23,7 +23,7 @@ class Word
         Console.Write($"{GetWordString()} ");
     }
 
-    public string GetWordString()
+     public string GetWordString() //If the word is supposed to be hidden, this replaces it with underscores.
     {
         string returnString = "";
         if (_hidden)

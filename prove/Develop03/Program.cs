@@ -28,14 +28,36 @@ class Program
 {
     static void Main(string[] args)
     {
-        Word myWord = new Word ("Hello");
-        myWord.Display();
-        myWord.Hide();
-        Console.WriteLine();
-        myWord.Display();
 
-        Scripture myScripture = new Scripture("Moses", 1, 39, "Behold, this is my work and my glory, to bring to pass the immortality and eternal life of man.");
+        Scripture myScripture = new Scripture("James", 1, 39, 40, "Every good gift and every perfect gift is from above, and cometh down from the Father of lights, with whom is no variableness, neither shadow of turning. Of his own will begat he us with the word of truth, that we should be a kind of firstfruits of his creatures.");
+
+        while (true)
+        {
+            Console.Clear();
+            myScripture.ShowScripture();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Press Enter to hid words, or type 'quit' to exit.");
+
+            string input = Console.ReadLine();
+            if (input == "quit")
+            {
+                break;
+            }
+            if (!myScripture.HideWords())
+            {
+                break;
+            
+            }
+
+
+
+        }
+
+
         Console.Clear();
-        myScripture.ShowScripture();
+
+
     }
 }
+
