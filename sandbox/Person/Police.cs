@@ -6,9 +6,9 @@ class Police : Person
     {
         _weapons = weapons;
     }
-    public void DisplayPoliceInformation()
+    public string GetPoliceInformation()
     {
-        Console.WriteLine($"{_weapons}: DisplayPersonInformation()");
+        return $"{_weapons}, {GetPersonInformation()}";
     }
 
 }

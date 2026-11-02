@@ -19,4 +19,10 @@ class Person
         Console.WriteLine($"{_firstName} {_lastName} is {_age} years old and weighs {_weight} pounds.");
     }
 
+    public string GetPersonInformation()
+    {
+        return $"{_firstName} {_lastName} is {_age} years old and weighs {_weight} pounds.";
+    }
+    
 }
+
