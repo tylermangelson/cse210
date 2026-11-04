@@ -13,7 +13,7 @@ class Program
         while (DateTime.Now < endTime)
         {
             activity.RunCountDownMessage("Breathe In . . . ", 4);
-            activity.RunCountDownMessage("Breathe In . . . ", 6);
+            activity.RunCountDownMessage("Breathe Out . . . ", 6);
 
         }
         
