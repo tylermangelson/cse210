@@ -27,14 +27,12 @@ class Program
 
         myResume._jobs.Add(job1);
         myResume._jobs.Add(job2);
-        
-
 
         Resume myResume2 = new Resume();
         myResume2._name = "Billy Bob";
 
         myResume2._jobs.Add(job3);
-        myResume2._jobs.Add(job2);
+        myResume2._jobs.Add(job1);
 
         myResume.Display();
         Console.WriteLine("");

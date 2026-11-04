@@ -23,15 +23,21 @@ class BaseActivity
         Console.CursorVisible = false;
         Console.Clear();
         Console.Write($"{message} ");
+
+        
         for (int i=0; i < seconds; i++)
         {
     
-            Console.Write("+");
+            Console.Write("_");
             Thread.Sleep(200);
             Console.Write("\b");
-            Console.Write("-");
+            Console.Write("/");
             Thread.Sleep(200);
             Console.Write("\b");
+            Console.Write("|");
+            Thread.Sleep(200);
+            Console.Write("\b");
+            Console.Write("\\");
 
         }
         Console.CursorVisible = true;
