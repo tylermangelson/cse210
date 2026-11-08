@@ -22,7 +22,9 @@ class Program
                     break;
 
                 case 2:
-                    
+
+                    ReflectionActivity reflection = new ReflectionActivity();
+                    reflection.Run();                    
                     break;
 
                 case 3:

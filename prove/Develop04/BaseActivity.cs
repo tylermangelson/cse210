@@ -64,18 +64,20 @@ class BaseActivity
 
     public void CountDownMessage(string message, int duration)
     {
-        Console.CursorVisible = false;
 
         Console.Write(message);
         for (int i = duration; i > 0; i--)
         {
-            Console.Write($"{i}");
+            string text = i.ToString();
+            Console.Write(text);
             Thread.Sleep(1000);
-            Console.Write("\b \b"); 
+            for (int j = 0; j < text.Length; j++)
+            {
+                Console.Write("\b \b");
+            }
+             
         }
 
-        Console.CursorVisible = true;
-        
     }
 
     public void CompletionMessage()

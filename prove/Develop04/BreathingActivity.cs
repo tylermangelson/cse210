@@ -13,10 +13,12 @@ class BreathingActivity : BaseActivity
 
         while (DateTime.Now < endTime)
         {
+            Console.CursorVisible = false;
             CountDownMessage("Breathe in ", 5);
             Console.WriteLine();
             CountDownMessage("Breathe out ", 5);
             Console.WriteLine();
+            Console.CursorVisible = true;
         }
 
         CompletionMessage();
