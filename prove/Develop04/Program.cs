@@ -2,22 +2,21 @@ using System;
 
 class Program
 {
-    static void Main(string[] args)
+    public static void Main(String []args)
     {
-        BaseActivity activity = new BaseActivity();
-        activity.RunCountDownMessage("Hello", 5);
-        activity.DisplaySpinnerMessage("Well done", 10);
+        Menu myMenu = new Menu();
 
-        DateTime endTime = DateTime.Now.AddSeconds(15);
-
-        while (DateTime.Now < endTime)
+        int response = 0;
+        while(response != 5)
         {
-            activity.RunCountDownMessage("Breathe In . . . ", 4);
-            activity.RunCountDownMessage("Breathe Out . . . ", 6);
 
+            response = myMenu.DisplayMenu();
+            
+            switch(response)
+            {
+            
+                
+            }
         }
-        
     }
-
-    
 }
