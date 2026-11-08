@@ -28,11 +28,12 @@ class Program
                     break;
 
                 case 3:
-
+                    ListingActivity listing = new ListingActivity();
+                    listing.Run();                    
                     break;
 
                 case 4:
-
+                    Console.WriteLine("Goodbye!");
                     break;
             }
         }

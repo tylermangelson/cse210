@@ -1,7 +1,6 @@
 using System.Threading.Tasks.Dataflow;
 
 class ReflectionActivity : BaseActivity
-
 {
     public ReflectionActivity() : base("Reflection Activity", "This activity will help you reflect on important memories that you may take for granted or not think about often enough.")
     {
@@ -63,21 +62,6 @@ class ReflectionActivity : BaseActivity
             Console.WriteLine();
             WriteWithCountdown(20);
         }
-
-
-
-        // while (DateTime.Now < endTime)
-        // {
-        //     CountDownMessage("Record your thoughts... ", 20);
-        //     Console.WriteLine();
-        //     Console.WriteLine(GetRandomPrompt());
-        //     Console.WriteLine();
-
-        // }
-
-
-
-
 
         CompletionMessage();
         Thread.Sleep(3000);
