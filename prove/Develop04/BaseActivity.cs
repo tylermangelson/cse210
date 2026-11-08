@@ -14,7 +14,9 @@ class BaseActivity
 
     public void DisplayName()
     {
+        Console.Clear();
         Console.WriteLine(_name);
+        
     }
 
     public void DisplayDescription()
@@ -25,6 +27,8 @@ class BaseActivity
     public DateTime GetDuration()
     {
         Console.WriteLine("How long do you want your session to be?");
+        Console.WriteLine(" ");
+        Console.Write("Seconds: ");
         _duration = int.Parse(Console.ReadLine());
         DateTime startTime = DateTime.Now;
         _endTime = startTime.AddSeconds(_duration);
@@ -32,30 +36,52 @@ class BaseActivity
 
     }
 
+    public void SpinnerMessage()
+    {
+        List<string> spinner = new List<string> {"-", "\\", "|", "/"};
+
+        Console.CursorVisible = false;
+
+        Console.Clear();
+
+        Console.Write("Getting ready ");
+        for (int i = 0; i < 5; i++)
+        {
+            foreach (string character in spinner)
+            {
+                Console.Write(character);
+                Thread.Sleep(200);
+                Console.Write("\b \b");
+                
+        
+            }
+        }
+
+        Console.Clear();
+
+        Console.CursorVisible = true;
+    }
+
     public void CountDownMessage(string message, int duration)
     {
-        Console.WriteLine(message);
+        Console.CursorVisible = false;
+
+        Console.Write(message);
         for (int i = duration; i > 0; i--)
         {
             Console.Write($"{i}");
             Thread.Sleep(1000);
             Console.Write("\b \b"); 
         }
+
+        Console.CursorVisible = true;
         
     }
 
-    public void SpinnerMessage()
+    public void CompletionMessage()
     {
-        List<string> spinner = new List<string> {"-", "\\", "|", "/"};
-
-        for (int i = 0; i < 3; i++)
-        {
-            foreach (string character in spinner)
-            {
-                Console.Write(character);
-                Thread.Sleep(500);
-                Console.Write("\b \b");
-            }
-        }
+        Console.WriteLine();
+        Console.WriteLine($"Well done! You have completed the {_name}.");
     }
+
 }
