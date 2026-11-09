@@ -8,7 +8,7 @@ class Doctor : Person
     }
     public string GetDoctorInformation()
     {
-        return $"{_tools}, {GetPersonInformation()}";
+        return $"{GetPersonInformation()} and has a {_tools}.";
     }
 
 }
