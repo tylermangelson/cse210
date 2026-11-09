@@ -4,11 +4,11 @@
 
     static void DisplayPersonInformation(Person person)
     {
-        if (person is Doctor d)
-            Console.WriteLine(d.GetDoctorInformation());
-        else if(person is Police p)
-            Console.WriteLine(p.GetPoliceInformation());
-        else
+        // if (person is Doctor d)
+        //     Console.WriteLine(d.GetDoctorInformation());
+        // else if(person is Police p)
+        //     Console.WriteLine(p.GetPoliceInformation());
+        // else
             Console.WriteLine(person.GetPersonInformation());
 
     }

@@ -6,9 +6,11 @@ class Doctor : Person
     {
         _tools = weapons;
     }
-    public string GetDoctorInformation()
+
+    
+    public override string GetPersonInformation() // override says it can override the implementation given in Person.cs
     {
-        return $"{GetPersonInformation()} and has a {_tools}.";
+        return $"{base.GetPersonInformation()} and has a {_tools}.";
     }
 
 }

@@ -6,9 +6,10 @@ class Police : Person
     {
         _weapons = weapons;
     }
-    public string GetPoliceInformation()
+    
+    public override string GetPersonInformation() // override says it can override the implementation given in Person.cs
     {
-        return $"{GetPersonInformation()} and has a {_weapons}.";
+        return $"{base.GetPersonInformation()} and has a {_weapons}.";
     }
 
 }
