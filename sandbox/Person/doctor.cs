@@ -10,7 +10,12 @@ class Doctor : Person
     
     public override string GetPersonInformation() // override says it can override the implementation given in Person.cs
     {
-        return $"{base.GetPersonInformation()} and has a {_tools}.";
+        return $"{base.GetPersonInformation()} and has a {_tools}."; //is it taking the base implementation and adding to it?
+    }
+
+    public override double GetSalary()
+    {
+        return 350000.00;
     }
 
 }
